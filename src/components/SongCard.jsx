@@ -16,7 +16,7 @@ const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
 
   return (
     <div
-      className="flex flex-col w-[250px] p-4 bg-white/5
+      className="flex flex-col lg:w-[250px] w-[150px] p-4 bg-white/5
   bg-opacity-80 backdrop-blur-sm animate-slideup
   rounded-lg cursor-pointer"
     >
@@ -41,7 +41,7 @@ const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
         <img className="rounded-lg" src={song.images?.coverart} alt="logo-song" />
       </div>
       <div className="mt-4 flex flex-col">
-        <p className="font-semibold text-lg text-white truncate">
+        <p className="font-semibold lg:text-lg text-sm text-white truncate">
           <Link to={`/songs/${song?.key}`}>
             {song.title}
           </Link>
